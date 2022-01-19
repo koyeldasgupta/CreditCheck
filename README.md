@@ -1,15 +1,50 @@
-# Getting Started with Create React App
+# Getting Started with Credit Check App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features
+
+Credit Card check app has below pages and functionalities -
+
+     1. Home Page - This is default home with Credit Eligibility button and a banner .
+
+     2. Credit Check - This pages asks customers to put information based on which eligible cards are shown .
+
+  -    We can extend the available cards by adding a new Card entity inside Cards.json (mock-data/Cards.json)  with the necessary attributes along with a rule ID.
+  -    We can also extend the rules for getting eligible cards by adding a new rule inside availabilityRules section inside Cards.json . While adding a new rule we need to make sure  that  we are giving the comparison field name same as we have inside the credit check form. Currently the rule supports below
+  operations out of the box .
+   ```
+     switch(operator) {
+        case 'equal' : result = customerValue === conditionValue; break;
+        case 'greaterThan' : result = customerValue > conditionValue; break;
+        case 'lessThan' : result = customerValue < conditionValue; break;
+        default: result = false; break;
+    }
+   ```
+   Should we need a new operator ,we need to update this switch case inside utils/GetEligibleCards.ts
+
+   -  This application has couple of unit tests isnides _test_ folder to validate the backbone  logic of the application . npm test will start running tests .
+
+   - This application is responsive  for mobile , tablet and desktop . References to app screens are below . 
+
+    ![This is an image](src/assets/images/responsive.png)
+
+   - This appliaction uses json-server to serve the mock json data . Please install json-server ( npm install -g json-server )
+
+
+ 
+
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you need run below commands from different terminal:
 
 ### `npm start`
 
+### `npm server`
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
