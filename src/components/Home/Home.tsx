@@ -1,22 +1,21 @@
-import  React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './CreditCards.scss';
+import './Home.scss';
 
-const CreditCards = () => {
+const Home = () => {
     let navigate = useNavigate();
 
     const handleCheckEligibility = (): void => {
-        navigate('/credit-cards/credit-check');
+        navigate('/credit-check');
     };
 
     return (
-        <div className='credit-cards-container'>
-            <div className='credit-cards-banner'>
-               <div className='credit-cards-banner-content'>
-                    <div className='credit-cards-banner-content--tilte'>
+        <div className='home-container'>
+            <div className='home-banner'>
+               <div className='home-banner-content'>
+                    <div className='home-banner-content--tilte'>
                         <h1>Find the right credit card for you</h1>
                     </div>
-                    <button className='action-btn credit-cards-banner-content--button' onClick={handleCheckEligibility}>Check My Eligibility</button>
+                    <button className='action-btn home-banner-content--button' onClick={handleCheckEligibility}>Check My Eligibility</button>
                     <ul>
                         <li>Get your free credit report</li>
                         <li>No harm to your credit rating</li>
@@ -30,4 +29,4 @@ const CreditCards = () => {
     );
 }
 
-export  default CreditCards;
+export  default Home;

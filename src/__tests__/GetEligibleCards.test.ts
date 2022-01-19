@@ -77,7 +77,7 @@ const customerData1: ICustomerData = {
 const customerData2: ICustomerData = {
   firstName: 'Trevor',
   lastName: 'Rieck',
-  dateOfBirth: new Date(),
+  dateOfBirth: new Date('29/06/1984'),
   postcode: 'TS25 2NF',
   houseNumber: '343',
   streetName: 'Pomorska',

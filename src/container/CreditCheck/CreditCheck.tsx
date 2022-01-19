@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import CreditCheckForm from '../../components/CreditCheckForm/CreditCheckForm';
 import { ICreditCard, ICustomerData, IFetchCreditCardsResponse } from '../../models/models';
