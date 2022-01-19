@@ -35,7 +35,7 @@ Credit Card check app has below pages and functionalities -
 
    - This application is responsive  for mobile , tablet and desktop . References to app screens are below . 
 
-    <img src="src/assets/images/responsive.png" />
+    <img src="/src/assets/images/responsive.png" />
 
   
 
