@@ -27,7 +27,7 @@ Credit Card check app has below pages and functionalities -
 
     - This appliaction uses json-server to serve the mock json data . Please install json-server ( npm install -g json-server ) in case json-sever does not get installed automatically .
 
-    In the project directory, you need run below commands from different terminal:
+   - In the project directory, you need run below commands from different terminal:
 
          ### `npm start`
 
@@ -35,7 +35,7 @@ Credit Card check app has below pages and functionalities -
 
    - This application is responsive  for mobile , tablet and desktop . References to app screens are below . 
 
-    ![ScreenShot](src/assets/images/responsive.png)
+    <img src="src/assets/images/responsive.png">
 
   
 
