@@ -11,7 +11,7 @@ import './CreditCheck.scss';
 const CreditCheck = () => {
     const [customerData, setCustomerData] = useState<ICustomerData | null>(null);
     const [eligibleCards, setEligibleCards] = useState<ICreditCard[]>([]);
-    const {data: creditCardData , error, isLoading, execute: getAllCards} = useAPI(`${window.location.origin}/json_data/Cards.json`, 'GET', null, false);
+    const {data: creditCardData , error, isLoading, execute: getAllCards} = useAPI(`http://localhost:8000/creditCardsWithRules`, 'GET', null, false);
 
     useEffect(() => {
         if(creditCardData && customerData) {
