@@ -33,13 +33,7 @@ Credit Card check app has below pages and functionalities -
 
          ### `npm run server`
 
-   - This application is responsive  for mobile , tablet and desktop . References to app screens are below . 
-
-    ![Screenshot](responsive.PNG)
-  
-
-
- 
+   - This application is responsive  for mobile , tablet and desktop . 
 
 ## Available Scripts
 
