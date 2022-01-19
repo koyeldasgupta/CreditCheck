@@ -1,0 +1,31 @@
+.App {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+  font-family: "Buenos Aires", Arial, sans-serif;
+
+  .action-btn {
+    background-color: #261291;
+    border-radius: 24px;
+    border: #261291 solid 1px;
+    cursor: pointer;
+    color: #ffffff;
+    height: 48px;
+    width: 234px;
+    font-size: 17px;
+    font-weight: 700;
+
+    &:hover {
+      color: #08051c;
+      background-color: #cbceec;
+      border-color: #cbceec;
+    }
+    &:active {
+      color: #FFF;
+      background-color: #283297;
+      border-color: #283297;
+      transform: scale(0.98);
+    }
+  }
+}

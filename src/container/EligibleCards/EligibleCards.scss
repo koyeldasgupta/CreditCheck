@@ -1,0 +1,16 @@
+.eligible-cards{
+    &-content {
+        background-color: #fff;
+        width: 50%;
+        margin: 70px;
+        padding: 15px;
+    }
+    @media only screen 
+    and (min-width: 320px)
+    and (max-width: 1400px) {
+        &-content {   
+            width: 100%;
+        }
+    }
+}
+

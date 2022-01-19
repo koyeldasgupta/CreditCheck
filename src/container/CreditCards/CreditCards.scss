@@ -1,0 +1,41 @@
+.credit-cards-container {
+    width: 100%;
+    height: 100%;
+    .credit-cards-banner {
+        background-image: url('../../assets/images/background-image-large.jpg');
+        width: 100%;
+        min-height: 600px;
+        padding: 0 64px;
+        .credit-cards-banner-content {
+            padding: 128px;
+            color: #ffffff;
+            &--button {
+                background-color: #f4ee22;
+                border-color: #f4ee22;
+                color: #08051c;
+                &:hover, &:focus {
+                    background-color: #fcfbc8;
+                    border-color: #fcfbc8;
+                }
+                &:active {
+                    background-color: #cfca1c;
+                    border-color: #cfca1c;
+                    transform: scale(0.98);
+                }
+            }
+            @media only screen 
+            and (min-width: 320px)
+            and (max-width: 1400px) {
+            /* smartphones, Android phones, landscape iPhone ,tab*/ 
+                padding: 15px;
+            }
+            ul {
+                margin-top: 30px;
+                li {
+                    margin: 15px 0;
+                }
+            }
+
+        }
+    }
+}
