@@ -25,7 +25,7 @@ Credit Card check app has below pages and functionalities -
 
    -  This application has couple of unit tests isnides _test_ folder to validate the backbone  logic of the application . npm test will start running tests .
 
-    - This appliaction uses json-server to serve the mock json data . Please install json-server ( npm install -g json-server ) in case json-sever does not get installed automatically .
+   -  This appliaction uses json-server to serve the mock json data . Please install json-server , in case json-sever does not get installed automatically use command npm install -g json-server .
 
    - In the project directory, you need run below commands from different terminal:
 
